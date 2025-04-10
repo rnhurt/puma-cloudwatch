@@ -20,8 +20,9 @@ Or if you need to set multiple dimensions, you could use something like:
 
 Then you can get metrics for your `demo-web-puma` app. List of metrics:
 
+* busy_threads: "wholistic" stat reflecting the overall current state of work to be done and the capacity to do it.
 * pool_capacity: the number of requests that the server is capable of taking right now.
-* max_threads:  preconfigured maximum number of worker threads.
+* max_threads: preconfigured maximum number of worker threads.
 * running: the number of running threads (spawned threads) for any Puma worker.
 * backlog: the number of connections in that worker's "todo" set waiting for a worker thread.
 

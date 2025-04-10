@@ -1,6 +1,6 @@
 class PumaCloudwatch::Metrics
   class Parser
-    METRICS = [:backlog, :running, :pool_capacity, :max_threads]
+    METRICS = [:backlog, :busy_threads, :running, :pool_capacity, :max_threads]
 
     def initialize(data)
       @data = data
@@ -14,6 +14,7 @@ class PumaCloudwatch::Metrics
     # Build this structure:
     #
     #     [{:backlog=>[0, 0],
+    #     :busy_threads=>[0, 0],
     #     :running=>[0, 0],
     #     :pool_capacity=>[16, 16],
     #     :max_threads=>[16, 16]}]
