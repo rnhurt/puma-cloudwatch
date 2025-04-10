@@ -60,13 +60,18 @@ class PumaCloudwatch::Metrics
     # Output example:
     #
     #   [{:metric_name=>"backlog",
-    #     :statistic_values=>{:sample_count=>2, :sum=>0, :minimum=>0, :maximum=>0}},
+    #     :statistic_values=>{:sample_count=>2, :sum=>0, :minimum=>0, :maximum=>0},
+    #     :storage_resolution=>60},
     #   {:metric_name=>"running",
-    #     :statistic_values=>{:sample_count=>2, :sum=>0, :minimum=>0, :maximum=>0}},
+    #     :statistic_values=>{:sample_count=>2, :sum=>0, :minimum=>0, :maximum=>0},
+    #     :storage_resolution=>60},
     #   {:metric_name=>"pool_capacity",
-    #     :statistic_values=>{:sample_count=>2, :sum=>32, :minimum=>16, :maximum=>16}},
+    #     :statistic_values=>{:sample_count=>2, :sum=>32, :minimum=>16, :maximum=>16},
+    #     :storage_resolution=>60},
     #   {:metric_name=>"max_threads",
-    #     :statistic_values=>{:sample_count=>2, :sum=>32, :minimum=>16, :maximum=>16}}]
+    #     :statistic_values=>{:sample_count=>2, :sum=>32, :minimum=>16, :maximum=>16},
+    #     :storage_resolution=>60
+    #   }]
     #
     # Resources:
     # pool_capcity and max_threads are the important metrics
